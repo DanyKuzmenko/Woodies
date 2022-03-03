@@ -1,0 +1,128 @@
+@import "../vendor/normalize.css";
+@font-face {
+  font-family: "Nunito";
+  src: url("./Nunito-Regular.ttf") format("woff") url("./Nunito-Regular.ttf") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("./Nunito-ExtraBold.ttf");
+}
+.page {
+  color: #fff;
+  max-width: 1152px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header__header {
+  display: flex;
+  flex-direction: row;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  margin: 24px 115px 0 80px;
+}
+.header__logo-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+.header__logo-title {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #3E3F43;
+  margin: 0;
+  padding: 0;
+}
+.header__navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 27px 0 0 0;
+}
+.header__link {
+  list-style: none;
+  font-family: "Nunito";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(34, 34, 34, 0.75);
+  margin: 0 48px 0 0;
+  padding: 0;
+}
+.header__link:first-child {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #DAA520;
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+}
+.header__text-container {
+  display: flex;
+  flex-direction: column;
+}
+.header__title {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 98px;
+  color: #313235;
+  margin: 0 0 16px 102px;
+  padding: 0;
+}
+.header__subtitle {
+  font-family: "Nunito";
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+  color: #3E3F43;
+  margin: 161px 0 16px 102px;
+  padding: 0;
+}
+.header__subtitle-span {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  color: #3E3F43;
+}
+.header__button {
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #DAA520;
+  width: 175px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 0 0 102px;
+}
+.header__image {
+  width: 568px;
+  height: 577px;
+  margin: 116px 0 0 0;
+}
+.header__background-image {
+  background-image: url("../images/HeaderBackgroundImage.svg");
+  width: 370px;
+  height: 800px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */
