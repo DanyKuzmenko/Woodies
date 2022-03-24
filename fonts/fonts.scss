@@ -9,5 +9,19 @@
     font-family: "Nunito";
     src: url('./Nunito-ExtraBold.ttf') format('woff'),
     url('./Nunito-ExtraBold.ttf') format('woff2');
-    font-weight: bold;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url('./Nunito-Bold.ttf') format('woff'),
+    url('./Nunito-Bold.ttf') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url('./Nunito-SemiBold.ttf') format('woff'),
+    url('./Nunito-SemiBold.ttf') format('woff2');
+    font-weight: 600;
 }

@@ -1,0 +1,51 @@
+@mixin font ($weigth, $size, $height, $color) {
+  font: {
+      family: "Nunito";
+      weight: $weigth;
+      size: $size;
+  }
+  line-height: $height;
+  color: $color;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.how-it-works {
+  &__container {
+    @include flex-row;
+  }
+  &__subtitle {
+    @include font(700, 36px, 49px, #3E3F43);
+    padding: 0;
+    margin: 145px 84.37px 88px 100px;
+  }
+  &__title {
+    @include font(800, 72px, 98px, rgba(34, 34, 34, 0.1));
+    padding: 0;
+    margin: 120px 100px 0 64px;
+  }
+  &__card-container {
+    @include flex-row;
+  }
+  &__card {
+    width: 238px;
+    height: 177px;
+  }
+  &__image {
+    margin: 0;
+    padding: 11.61px 59px 35.61px 59px;
+  }
+  &__card-title {
+    @include font(700, 24px, 33px, #000);
+  }
+  &__background-image {
+
+  }
+  &__button {
+
+  }
+  display: flex;
+  flex-direction: column;
+}
