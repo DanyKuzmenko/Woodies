@@ -18,12 +18,12 @@
   }
   &__subtitle {
     @include font(700, 36px, 49px, #3E3F43);
-    margin: 144px 345.8px 147px 100px;
+    margin: 24px 345.8px 147px 100px;
     padding: 0;
   }
   &__title {
     @include font(800, 72px, 98px, rgba(34, 34, 34, 0.1));
-    margin: 120px 100px 144px 0;
+    margin: 0 100px 144px 0;
     padding: 0;
   }
   &__food-image {
@@ -78,4 +78,5 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  margin: 178px auto 0 auto;
 }

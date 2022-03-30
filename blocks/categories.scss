@@ -1,0 +1,74 @@
+@mixin font ($weigth, $size, $height, $color) {
+    font: {
+        family: "Nunito";
+        weight: $weigth;
+        size: $size;
+    }
+    line-height: $height;
+    color: $color;
+}
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.categories {
+    &__container {
+        @include flex-row;
+    }
+    &__subtitle {
+        @include font(700, 36px, 49px, #3E3F43);
+        padding: 0;
+        margin: 25px 227.06px 64px 100px;
+    }
+    &__title {
+        @include font(800, 72px, 98px, rgba(34, 34, 34, 0.1));
+        margin: 0 100px 40px 0;
+        padding: 0;
+    }
+    &__card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 280px);
+        grid-template-rows: repeat(2, 400px);
+        gap: 56px 40px;
+        width: 952px;
+        margin: 0 auto 120px auto;
+    }
+    &__card {
+        position: relative;
+        background-image: url('../images/categories-background-image-1.svg');
+    }
+    &__card:nth-child(3n + 2) {
+        background-image: url('../images/categories-background-image-2.svg');
+    }
+    &__card:nth-child(3n) {
+        background-image: url('../images/categories-background-image-3.svg');
+    }
+    &__card-title {
+        @include font(800, 24px, 33px, #3E3F43);
+        padding: 0;
+        margin: 24px 0 0 16px;
+    }
+    &__card-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__card-button {
+        @include font(600, 18px, 25px, #3E3F43);
+        position: absolute;
+        bottom: 24px;
+        right: 16px;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #3E3F43;
+        border-radius: 4px;
+        background-color: unset;
+        width: 123px;
+        height: 40px;
+        cursor: pointer;
+    }
+    display: flex;
+    flex-direction: column;
+}

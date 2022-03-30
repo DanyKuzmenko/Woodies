@@ -20,17 +20,17 @@
   &__subtitle {
     @include font(700, 36px, 49px, #3E3F43);
     padding: 0;
-    margin: 145px 84.37px 88px 100px;
+    margin: 145px 84px 88px 100px;
   }
   &__title {
     @include font(800, 72px, 98px, rgba(34, 34, 34, 0.1));
     padding: 0;
-    margin: 120px 100px 0 64px;
+    margin: 120px 0 0 64px;
   }
   &__card-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 145px;
+    margin-bottom: 120px;
   }
   &__card {
     width: 238px;
@@ -64,6 +64,7 @@
     padding: 0;
     margin: 78px auto 0 auto;
     border: none;
+    cursor: pointer;
   }
   display: flex;
   flex-direction: column;

@@ -38,6 +38,7 @@
         @include font(normal, 16px, 22px, rgba(34, 34, 34, 0.75));
         margin: 0 48px 0 0;
         padding: 0;
+        cursor: pointer;
     }
     &__link:first-child {
         @include font(bold, 16px, 22px, #DAA520);
@@ -55,12 +56,14 @@
         padding: 0;
     }
     &__subtitle {
-        @include font(normal, 36px, 49px, #3E3F43);
+        @include font(400, 36px, 49px, #3E3F43);
         margin: 161px 0 16px 102px;
         padding: 0;
+        width: 504px;
+        // сделал, чтобы текст растянулся
     }
-    &__subtitle-span {
-        @include font(bold, 36px, 49px, #3E3F43);
+    &__span {
+        font-weight: 700;
     }
     &__button {
         @include font(bold, 16px, 22px, #fff);
@@ -70,6 +73,7 @@
         border: none;
         border-radius: 4px;
         margin: 0 0 0 102px;
+        cursor: pointer;
     }
     &__image {
         width: 568px;
@@ -77,7 +81,7 @@
         margin: 116px 0 0 0;
     }
     &__background-image {
-        background-image: url('../images/HeaderBackgroundImage.svg');
+        background-image: url('../images/HeaderBackgroundImage.png');
         width: 370px;
         height: 800px;
         position: absolute;
